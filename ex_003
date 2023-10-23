@@ -1,0 +1,38 @@
+package aula_001;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Ex_003 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		//////////////////////////
+		//Incializando varivaeis//
+		//////////////////////////
+		
+		int numFuncionario;
+		int numHorario;
+		int valorPorHoras;
+		double salario;
+		double resultado = salario * valorPorHoras;
+	
+		
+		/////////
+		//Input//
+		/////////
+		
+		System.out.println("Digite o seu numero de funcionario: ");
+			numFuncionario = sc.nextint();
+		System.out.println("Digite suas horas trabalhadas: ");
+			numHorario = sc.nextint();
+		System.out.println("Digite o valor do seu salario: ");
+			salario = sc.nextdouble();
+		
+		System.out.println("Funcionarios =" + numFuncionario);
+		System.out.println("Salario = U$" + resultado);
+	}
+
+}
