@@ -1,0 +1,35 @@
+package aula_001;
+
+import java.util.Locale; //import do locale
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US); //Mudar a lingua para ingles
+		System.out.println("Hello, World"); //print
+		
+		String product1 = "Computer";
+		String product2 = "Office desk";
+		
+		//////////////////////////////
+		//inicializando as variaveis//
+		//////////////////////////////
+		
+		int age = 30;
+		int code = 5290;
+		char gender = 'F';
+		
+		double price1 = 2100.0; //Em java é mlhor usar o double para numeros flutuantes
+		double price2 = 650.0;
+		double meassure = 53.234567;
+
+		System.out.println("Produtos:");
+		System.out.printf("Computador, cujo preço é %2f \n"
+				+ "Mesa de escritorio, cujo preço é igual a %2f\n" 
+				+ "Registro: %d, codigo %d e genero: %s\n"
+				+ "Medida com oitos casas decimais: %.8f \n"
+				+ "Cercado (tres casas decimais): %.3f\n"
+				+ "Ponto decimal dos EUA: %.3f \n ",price1,price2,age,code,gender,meassure,meassure,meassure);
+	}
+
+}
